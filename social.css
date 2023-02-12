@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verified: hsl(333, 80%, 67%);
+    --white: hsl(0,0%,100%);
+}
+body{
+    max-width: 900px;
+    margin: 30px auto;
+    background-image: url("/HTML/images/hero-bg.png");
+    background-repeat: 900px;
+    
+    
+} 
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    
+    
+}
+.detail{
+    width: 200px;
+    
+}
+.detail h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: hsl(300, 43%, 22%);
+}
+.detail p{
+    font-size: 12px;
+    
+    color: gray;
+}
+
+span{
+    display: block;
+    background-color:rgb(237, 227, 237) ;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 40px 10px 10px;
+    font-size: 10px;
+    
+}
+.two{
+    position: relative;
+    left: 30px;
+}
+.three{
+    position: relative;
+    left: 60px;
+}
+@media (max-width: 640px) {
+.review{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+span{
+    margin-top: 18px;
+}
+
+
+.two{
+    position: unset;
+}
+.three{
+    position: unset;
+}
+}
+img{
+    height: 50px;
+    border-radius: 50%;
+}
+.boxes{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    
+
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.name{
+    position: relative;
+    left: 30px;
+}
+.word{
+    width: 300px;
+    color: white;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 12px;
+    
+}
+.one_box{
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+padding: 10px;
+background-color: purple;
+margin: 10px;
+}
+.buy{
+    color: rgb(219, 69, 94);
+    font-style: italic bold;
+}
+
+.namee{
+    color: white;
+}
+.two_box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: purple;
+    margin: 10px;
+    position: relative;
+    top: 15px;
+}
+.three_box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--verified);
+    margin: 10px;
+    position: relative;
+    top: 25px;
+}
+@media(max-width: 640px) {
+    .boxes{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
